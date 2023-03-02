@@ -1,4 +1,5 @@
-npm install react-confetti
+Npm react-confetti is necessary.
+        npm install react-confetti
 
 List of props:
 https://www.npmjs.com/package/react-confetti
