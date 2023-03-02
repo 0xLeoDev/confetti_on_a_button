@@ -1,6 +1,3 @@
-// npm install react-confetti
-// https://www.npmjs.com/package/react-confetti
-
 import React, { useEffect, useState } from "react";
 import ReactConfetti from "react-confetti";
 
