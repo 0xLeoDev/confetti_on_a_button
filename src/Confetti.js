@@ -27,12 +27,18 @@ const Confetti = () => {
       <button onClick={() => settoggleConfetti(!toggleConfetti)}>
         Confetti now
       </button>
+
+      {/* Conditional rendering */}
       {toggleConfetti && (
         <ReactConfetti
           width={windowDimension.width}
           height={windowDimension.height}
-          tweenDuration={10}
-          numberOfPieces={200}
+          tweenDuration={5000}
+          numberOfPieces={300}
+          gravity={0.15}
+          initialVelocityX={5}
+          recycle={false}
+          onConfettiComplete={() => settoggleConfetti(!toggleConfetti)}
         />
       )}
     </div>
