@@ -18,6 +18,8 @@ https://www.youtube.com/watch?v=wPCQq4rBLnw&list=PLlPJrwoUqhnMVMEPFzrdxjoQWeALH_
 
 ### Changes i've made:
 >The button only initialise the confetti. <br />
->The animation automatically stop after the circle.
+>The animation automatically stop after the circle. <br />
+>You can call the confetti function from the parent now. <br />
+>Width bug fixed.
 
 
