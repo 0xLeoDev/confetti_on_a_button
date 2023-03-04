@@ -2,7 +2,7 @@
 License: MIT License
 
 ---
-### Npm react-confetti is necessary. <br/>
+### In order to use instal react-confetti is necessary. <br/>
 
     npm i react-confetti
 

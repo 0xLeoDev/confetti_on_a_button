@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ReactConfetti from "react-confetti";
 
-const Confetti = () => {
-  const [toggleConfetti, settoggleConfetti] = useState(false);
-
+const Confetti = (props) => {
   const [windowDimension, setwindowDimension] = useState({
     width: window.innerWidth,
     height: window.innerHeight,
@@ -24,21 +22,19 @@ const Confetti = () => {
 
   return (
     <div>
-      <button onClick={() => settoggleConfetti(!toggleConfetti)}>
-        Confetti now
-      </button>
-
       {/* Conditional rendering */}
-      {toggleConfetti && (
+      {props.toggleConfetti && (
         <ReactConfetti
-          width={windowDimension.width}
+          width={windowDimension.width * 0.999}
           height={windowDimension.height}
           tweenDuration={5000}
           numberOfPieces={300}
           gravity={0.15}
           initialVelocityX={5}
           recycle={false}
-          onConfettiComplete={() => settoggleConfetti(!toggleConfetti)}
+          onConfettiComplete={() =>
+            props.settoggleConfetti(!props.toggleConfetti)
+          }
         />
       )}
     </div>
